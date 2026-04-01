@@ -5,22 +5,22 @@ function Hero() {
     <header className="hero-wrapper">
       <nav className="nav">
         <div className="logo">
-          <a href="#">
+          <a href="index.html">
             <img src="/images/fluent-logo.png" alt="Fluent Farms Logo" />
           </a>
         </div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about-us">About</a>
           </li>
           <li>
-            <a href="#">Products</a>
+            <a href="#products">Products</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

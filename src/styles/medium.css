@@ -1,0 +1,213 @@
+/* ============================================
+   RESPONSIVE DESIGN - iPad (768px to 1023px)
+   ============================================ */
+@media (max-width: 1023px) {
+  .logo {
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo img {
+    width: 55px;
+  }
+
+  .nav {
+    padding: 1.5rem 2rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nav-menu li {
+    margin: 0.75rem 0;
+    margin-left: 0;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--text-color);
+  }
+
+  .nav-menu li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: var(--secondary-color);
+    text-shadow: none;
+    border-bottom: none;
+  }
+
+  .hero-overlay {
+    top: 50%;
+    right: 1rem;
+    padding: 0 2rem;
+    transform: translateY(-60%);
+  }
+
+  .hero-overlay h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.5rem;
+  }
+
+  /* Cards stack to 1 per row */
+  .cards {
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  /* Banner stacks vertically */
+  .banner {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .banner-text {
+    margin-bottom: 1rem;
+  }
+
+  .banner h2 {
+    font-size: 1.3rem;
+  }
+
+  /* About content adjustment */
+  .about-content {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .about-content img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  /* Bottom section stacks */
+  .bottom-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .b-logo {
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+
+  .b-logo img {
+    width: 70px;
+  }
+
+  .bottom-text {
+    margin-top: 2rem;
+  }
+
+  /* Form adjustment */
+  .form-wrapper {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /* Footer stacks */
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content p {
+    border-right: none;
+    border-bottom: 2px solid white;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .packages h2 {
+    font-size: 2.5rem;
+  }
+}

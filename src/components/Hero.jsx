@@ -1,6 +1,9 @@
 //this is the hero component that will be used in the home page
+import { useState } from "react";
 
 function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="hero-wrapper">
       <nav className="nav">
@@ -9,18 +12,35 @@ function Hero() {
             <img src="/images/fluent-logo.png" alt="Fluent Farms Logo" />
           </a>
         </div>
-        <ul>
+        <button
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" onClick={() => setMenuOpen(false)}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about-us">About</a>
+            <a href="#about-us" onClick={() => setMenuOpen(false)}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#products">Products</a>
+            <a href="#products" onClick={() => setMenuOpen(false)}>
+              Products
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

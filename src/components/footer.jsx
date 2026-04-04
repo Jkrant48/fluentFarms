@@ -5,13 +5,22 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; 2026 Fluent Farms</p>
+
         <ul className="social-links">
           <li>
             <a
               className="social-icon"
               href="https://www.tiktok.com/@fluentfarmsgh?_r=1&_t=ZS-95BAKvmiLsj"
             >
-              <img src="/images/tiktok-icon.png" alt="TikTok" />
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              className="social-icon"
+              href="https://www.tiktok.com/@fluentfarmsgh?_r=1&_t=ZS-95BAKvmiLsj"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>
           <li>
@@ -19,11 +28,7 @@ function Footer() {
               className="social-icon"
               href="https://www.instagram.com/fluentfarmsgh?igsh=YTZidjl1amdzdTN2"
             >
-              <img
-                className="social-icon"
-                src="/images/instagram-icon.png"
-                alt="Instagram"
-              />
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
         </ul>

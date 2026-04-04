@@ -68,14 +68,21 @@ function Home() {
       </section>
       <section className="bottom-section">
         <div className="contact" id="contact">
-          <div className="logo">
+          <div className="b-logo">
             <img src="images/fluent-logo.png" alt="Fluent Farms Logo" />
           </div>
           <div className="bottom-text">
-            <p>Tel: (+233) 53 323 8004/ (+233) 20 873 4507</p>
-            <p>Email: fluentfarmsgh@gmail.com</p>
             <p>
-              Address: Maame Dede-Okyerekrom, Ghana
+              <i className="fa-solid fa-phone"></i>
+              (+233) 53 323 8004 / (+233) 20 873 4507
+            </p>
+            <p>
+              <i className="fa-solid fa-envelope"></i>
+              fluentfarmsgh@gmail.com
+            </p>
+            <p>
+              <i className="fa-solid fa-map-marker-alt"></i>
+              Maame Dede-Okyerekrom, Ghana
               <br />
               (Off the Adeiso-Naswam Road)
             </p>

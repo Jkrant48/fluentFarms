@@ -24,7 +24,7 @@
     cursor: pointer;
     border: none;
     background: transparent;
-    padding: 0;
+    padding: 10px;
     gap: 5px;
   }
 
@@ -37,7 +37,7 @@
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
+    transform: rotate(40deg) translate(5px, 9px);
   }
 
   .hamburger.active span:nth-child(2) {
@@ -45,7 +45,7 @@
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-40deg) translate(3px, -5px);
   }
 
   /* Navigation Menu */
@@ -59,23 +59,23 @@
     list-style: none;
     padding: 1rem;
     display: none;
-    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
   }
 
   .nav-menu.active {
     display: flex;
-    animation: slideFromRight 0.3s ease;
+    animation: slideFromTop 0.3s ease;
   }
 
-  @keyframes slideFromRight {
+  @keyframes slideFromTop {
     from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateY(-50px);
     }
     to {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 
@@ -100,7 +100,7 @@
     right: 0;
     padding: 0 1.5rem;
     width: 100%;
-    top: 25%;
+    top: 15%;
     transform: translateY(-35%);
   }
 

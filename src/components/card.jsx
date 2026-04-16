@@ -1,12 +1,12 @@
 //this is a simple card component
 
-function Card({ tile, description, image }) {
+function Card(props) {
   return (
     <div className="card">
-      <h3>{tile}</h3>
+      <h3>{props.title}</h3>
 
-      <img src={image} alt={tile} />
-      <p>{description}</p>
+      <img src={props.image} alt={props.title} />
+      <p>{props.description}</p>
     </div>
   );
 }

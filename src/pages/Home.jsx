@@ -11,12 +11,12 @@ function Home() {
         <h2 id="products">Our Packages</h2>
         <div className="cards">
           <Card
-            tile="Fresh Cat fish"
+            title="Fresh Cat fish"
             description="Perfect for your family & restaurants."
             image="/images/fresh.png"
           />
           <Card
-            tile="Smoked Cat fish"
+            title="Smoked Cat fish"
             description="Ideal for your home cooked meals."
             image="/images/smoked.png"
           />

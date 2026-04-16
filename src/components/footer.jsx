@@ -16,10 +16,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a
-              className="social-icon"
-              href="https://www.tiktok.com/@fluentfarmsgh?_r=1&_t=ZS-95BAKvmiLsj"
-            >
+            <a className="social-icon" href="https://wa.me/+233533238004">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>

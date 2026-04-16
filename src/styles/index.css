@@ -114,7 +114,7 @@ p {
 
 .hero-overlay {
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 2rem; /* adjust horizontal offset */
   transform: translateY(-40%);
   width: 100%;

@@ -38,7 +38,7 @@
   }
 
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
+    transform: rotate(40deg) translate(5px, 9px);
   }
 
   .hamburger.active span:nth-child(2) {
@@ -46,32 +46,32 @@
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-40deg) translate(3px, -5px);
   }
 
   .nav-menu {
     position: absolute;
     top: 70px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 250px;
     background-color: var(--primary-color);
     flex-direction: column;
     list-style: none;
     padding: 1rem;
     display: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 999;
   }
 
   .nav-menu.active {
     display: flex;
-    animation: slideDown 0.3s ease;
+    animation: slideFromTop 0.3s ease;
   }
 
-  @keyframes slideDown {
+  @keyframes slideFromTop {
     from {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(-50px);
     }
     to {
       opacity: 1;
@@ -99,7 +99,7 @@
   }
 
   .hero-overlay {
-    top: 50%;
+    top: 30%;
     right: 1rem;
     padding: 0 2rem;
     transform: translateY(-60%);

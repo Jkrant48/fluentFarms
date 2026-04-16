@@ -1,5 +1,7 @@
 //form component
 
+//handle form submission
+
 function Form() {
   return (
     <div className="form-wrapper">

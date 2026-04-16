@@ -31,7 +31,9 @@ function Form() {
           placeholder="+233 123 456 789"
           required
         />
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={true}>
+          Submit
+        </button>
       </form>
     </div>
   );

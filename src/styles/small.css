@@ -236,6 +236,19 @@
     padding: 0.6rem;
   }
 
+  /* Google Form Container - Mobile */
+  .form-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  .google-form {
+    width: 100%;
+    min-height: 600px;
+  }
+
   /* Bottom section */
   .bottom-section {
     padding: 2rem 1rem;

@@ -189,6 +189,18 @@
     max-width: 500px;
   }
 
+  /* Google Form Container - Tablet */
+  .form-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .google-form {
+    width: 100%;
+    min-height: 700px;
+  }
+
   /* Footer stacks */
   .footer-content {
     flex-direction: column;

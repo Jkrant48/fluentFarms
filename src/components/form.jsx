@@ -6,7 +6,9 @@ function Form() {
   return (
     <div className="form-wrapper">
       <h2>Join Our Training Program</h2>
-      <form className="join-form">
+
+      {/* Original form component - commented out pending backend implementation */}
+      {/* <form className="join-form">
         <label htmlFor="name">Name:</label>
         <input
           type="text"
@@ -34,7 +36,21 @@ function Form() {
         <button type="submit" disabled={true}>
           Submit
         </button>
-      </form>
+      </form> */}
+
+      {/* Embedded Google Form */}
+      <div className="form-container">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd59xxWjOtIBCgPZIBq0ReqGHy3VWZqCkwTmSHr1MLlbLFvTg/viewform?embedded=true"
+          className="google-form"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          title="Training Program Registration Form"
+        >
+          Loading…
+        </iframe>
+      </div>
     </div>
   );
 }
